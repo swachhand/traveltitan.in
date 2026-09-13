@@ -1,0 +1,138 @@
+.icon {
+	display: inline-block;
+	margin: 2px;
+	height: 16px;
+	width: 16px;
+}
+
+/* ICONS */
+.icon-basemaps_osm {
+	background: url('icons/basemaps_osm.png') center;
+	background-size:contain;
+}
+.icon-basemaps_eris {
+	background: url('icons/basemaps_eris.png') center;
+	background-size:contain;
+}
+.icon-basemaps_topo {
+	background: url('icons/basemaps_topo.png') center;
+	background-size:contain;
+}
+.icon-uk_dham {
+	background: url('icons/uk_dham.png') center;
+	background-size:contain;
+}
+.icon-uk_kedar {
+	background: url('icons/uk_kedar.png') center;
+	background-size:contain;
+}
+.icon-uk_badri {
+	background: url('icons/uk_badri.png') center;
+	background-size:contain;
+}
+.icon-uk_prayag {
+	background: url('icons/uk_prayag.png') center;
+	background-size:contain;
+}
+.icon-uk_district {
+	background: url('icons/uk_district.png') center;
+	background-size:contain;
+}
+.icon-landmarks_fort {
+	background: url('icons/landmarks_fort.png') center;
+	background-size:contain;
+}
+.icon-landmarks_monument {
+	background: url('icons/landmarks_monument.png') center;
+	background-size:contain;
+}
+.icon-landmarks_trek {
+	background: url('icons/landmarks_trek.png') center;
+	background-size:contain;
+}
+.icon-landmarks_misc {
+	background: url('icons/landmarks_misc.png') center;
+	background-size:contain;
+}
+.icon-landforms_beach {
+	background: url('icons/landforms_beach.png') center;
+	background-size:contain;
+}
+.icon-landforms_cave {
+	background: url('icons/landforms_cave.png') center;
+	background-size:contain;
+}
+.icon-landforms_pass {
+	background: url('icons/landforms_pass.png') center;
+	background-size:contain;
+}
+.icon-landforms_camping {
+	background: url('icons/landforms_camping.png') center;
+	background-size:contain;
+}
+.icon-landforms_wildlife {
+	background: url('icons/landforms_wildlife.png') center;
+	background-size:contain;
+}
+.icon-landforms_folklore {
+	background: url('icons/landforms_folklore.png') center;
+	background-size:contain;
+}
+.icon-landforms_lake {
+	background: url('icons/landforms_lake.png') center;
+	background-size:contain;
+}
+.icon-landforms_desert {
+	background: url('icons/landforms_desert.png') center;
+	background-size:contain;
+}
+.icon-landforms_viewpoint {
+	background: url('icons/landforms_viewpoint.png') center;
+	background-size:contain;
+}
+.icon-landforms_waterfall {
+	background: url('icons/landforms_waterfall.png') center;
+	background-size:contain;
+}
+.icon-landforms_river {
+	background: url('icons/landforms_river.png') center;
+	background-size:contain;
+}
+.icon-temples_dravidian {
+	background: url('icons/temples_dravidian.png') center;
+	background-size:contain;
+}
+.icon-temples_kathkuni {
+	background: url('icons/temples_kathkuni.png') center;
+	background-size:contain;
+}
+.icon-temples_nagara {
+	background: url('icons/temples_nagara.png') center;
+	background-size:contain;
+}
+.icon-temples_rockcut {
+	background: url('icons/temples_rockcut.png') center;
+	background-size:contain;
+}
+.icon-temples_misc {
+	background: url('icons/temples_misc.png') center;
+	background-size:contain;
+}
+
+/* MARKERS */
+/*.leaflet-marker-icon {
+	padding: 2px;
+	text-align: center;
+}
+.marker-bar {
+	background: url('images/markers/bar.png') center center no-repeat;
+}
+.marker-fuel {
+	background: url('images/markers/fuel.png') center center no-repeat;
+}
+.marker-parking {
+	background: url('images/markers/parking.png') center center no-repeat;
+}
+.marker-drinking_water {
+	background: url('images/markers/drinking_water.png') center center no-repeat;
+}*/
