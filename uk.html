@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uttarakhand - Simply Heaven!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/leaflet.defaultextent.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/leaflet-panel-layers.min.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/leaflet-mapwithlabels.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/leaflet-loader.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/Control.FullScreen.css" />
+    <link rel="stylesheet" href="./leaflet/images/icons.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/leaflet-sidepanel.css" />
+    <link rel="stylesheet" href="./leaflet/plugins/L.Grid.css" />
+    <link rel="stylesheet" href="./leaflet/app/app_uk.css" />
+</head>
+<body>
+    <div class='custom-popup' id='mapUK'>
+    
+    	<div id="mySidePanel" class="sidepanel" aria-label="side panel" aria-hidden="false">
+		<div class="sidepanel-inner-wrapper">
+			<nav class="sidepanel-tabs-wrapper" aria-label="sidepanel tab navigation">
+				<ul class="sidepanel-tabs">
+					<li class="sidepanel-tab">
+						<a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-1">
+							About
+						</a>
+					</li>
+					<li class="sidepanel-tab">
+						<a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-2">
+							Spiritual
+						</a>
+					</li>
+					<li class="sidepanel-tab">
+						<a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-3">
+							Adventure
+						</a>
+					</li>
+					<li class="sidepanel-tab">
+						<a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-4">
+							Maps
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="sidepanel-content-wrapper">
+				<div class="sidepanel-content">
+					<div class="sidepanel-tab-content" data-tab-content="tab-1">
+						<p>This website is not affiliated with <a href="https://uttarakhandtourism.gov.in/" target="_blank">Uttarakhand Tourism</a>. Instead, it serves as a repository of insights and knowledge accumulated from my personal travels over the past two decades.
+							 Whether you are seeking off-the-beaten-path adventures or planning a pilgrimage to the sacred sites, this page offers a wealth of authentic experiences to enhance your journey.</p>
+						<h4>Districts</h4>
+						<p>The 13 districts in Uttarakhand are Almora, Bageshwar, Champawat, Chamoli, Dehradun, Haridwar, Nainital, Pauri, Pithoragarh, Rudraprayag, Tehri, Udham Singh Nagar and Uttarkashi.</p>
+						<h4>Archaeology</h4>
+						<p>The sites are marked based on ASI list of centrally protected monuments available at <a href="https://www.nma.gov.in/" target="_blank">
+							National Monuments Authority</a></p>
+					</div>
+					<div class="sidepanel-tab-content" data-tab-content="tab-2">
+						<p>Imbued with religious mythology, legends, and heritage, Uttarakhand boasts numerous revered temples, sacred rivers, and spiritual sites.</p>
+						<p><b>Char Dham - </b>Yamunotri, Gangotri, Kedarnath, Badrinath</p>
+						<p><b>Panch Kedar - </b>Kedarnath, Madhyamaheshwar, Tungnath, Rudranath, Kalpeshwar</p>
+						<p><b>Panch|Sapt Badri - </b>Badrinath, Yoga Badri, Bhavishya Badri, Ardh Badri, Narsingh Badri, Vriddh Badri, Dhyan Badri, Adi Badri</p>
+						<p><b>Panch Prayag - </b>Vishnu Prayag, Nand Prayag, Karn Prayag, Rudra Prayag, Dev Prayag</p>
+						<p><b>Miscellaneous - </b>Various vernacular (e.g. Mahasu Temple, Hanol) and traditional temples (e.g. Jageshwar Group of Temples, Baijnath Temple, Lakhamandal Temple, Katarmal Temple)</p>
+	
+					</div>
+					<div class="sidepanel-tab-content" data-tab-content="tab-3">
+					    <h4>Glacial Lakes</h4>
+						<p>The lakes are marked based on <a href="https://www.nrsc.gov.in/" target="_blank">
+							National Remote Sensing Center</a> report titled Glacial Lake Atlas of Ganga River Basin (2021).</p>
+						<h4>Wetlands</h4>
+						<p>The wetlands are marked based on report titled Wetlands of Uttarakhand (2012), jointly published by the Uttarakhand Forest Department and <a href="https://www.wwfindia.org/" target="_blank">
+							WWF India</a>.</p>
+						<h4>Wildlife</h4>
+						<p>The National Park, Wildlife Sanctuary, Conservation and Biosphere Reserve are marked as per data available at <a href="https://forest.uk.gov.in/" target="_blank">
+							Uttarakhand Forest Department</a> </p>
+						<h4>Caves, Rivers, Treks and Passes</h4>
+						<p>This is in no way a complete list, and would get updated as I explore and learn more about Uttarakhand.</p>
+					</div>
+					<div class="sidepanel-tab-content" data-tab-content="tab-4">
+						<h4>Open Series Map, Survey of India</h4>
+						<p>An index of sheet number for Open Series Map (1:50K scale) is specified. The pdf version of the maps can be freely downloaded from <a href="https://www.surveyofindia.gov.in/" target="_blank">
+							Survey of India</a> website.</p>
+						<p>Georefencing a map with the help of a GIS (geographic information system) software like QGIS or ArcGIS, is simple; however, trekkers and enthusiasts can check 'Open Series Map' where all Open Series Maps for Uttarakhand has been georeferenced and can be viewed against different layers of basemap.</p>
+						<h4>Note</h4>
+						<p>The Open Series Map (1:50K scale) of regions bordering Nepal and China is not available in public domain.</p>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidepanel-toggle-container">
+			<button class="sidepanel-toggle-button" type="button" aria-label="toggle side panel"></button>
+		</div>
+	</div>
+    
+    </div>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+    <script type="text/javascript" src="./leaflet/plugins/leaflet.defaultextent.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./leaflet/plugins/leaflet-panel-layers.min.js"></script>
+    <script src="./leaflet/plugins/leaflet-mapwithlabels.js"></script>
+    <script src="./leaflet/plugins/leaflet-loader.js"></script>
+    <script src="./leaflet/plugins/L.Path.DashFlow.js"></script>
+    <script src="./leaflet/plugins/Control.FullScreen.js"></script>
+    <script src="./leaflet/plugins/leaflet-sidepanel.min.js"></script>
+    <script src="./leaflet/plugins/L.Grid.js"></script>
+    <script src="./leaflet/app/app_uk.js"></script>
+</body>
+</html>
