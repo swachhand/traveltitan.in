@@ -1,0 +1,67 @@
+        body {
+            padding: 0;
+            margin: 0;
+            zoom: 100%;
+        }
+        html, body, #mapUK {
+            height: 100vh;
+            width: 100vw;
+        }
+        .custom-popup .leaflet-popup-content-wrapper {
+            background: rgb(253, 248, 228, 0.85);
+            color: #333333;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .custom-popup .leaflet-popup-tip {
+            background: rgb(253, 248, 228, 0.85);
+            border: 1px solid grey;
+        }
+        
+        .leaflet-tooltip.custom-tooltip {
+            background: rgb(253, 248, 228, 0.85);
+            border: 1px solid grey;
+        }
+
+        .leaflet-tooltip-left.custom-tooltip::before {
+            border: 1px solid grey;
+        }
+
+        .leaflet-tooltip-right.custom-tooltip::before {
+            border: 1px solid grey;
+        }
+
+       .altitudeecstasy {
+            width: 200px;
+            font-size: 13px;
+            color: #333333;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            padding: 5px 10px;
+            background-color: rgba(255,255,255,0.8) ;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .altitudeecstasy img {
+            width: 200px;
+            height: 35px;
+            margin: auto;
+            display: block;
+        }
+        .sidepanel-content {
+            text-align: justify;
+  			text-justify: auto;
+			font-size: 1rem;
+		}
+		.sidepanel-content a {
+			text-decoration: none;
+			font-size: 1rem;
+			color: #199900;
+			transition: color 0.3s ease-in;
+		}
+		.sidepanel-content a:hover {
+			color: #116600;
+			text-decoration: underline;
+		}
